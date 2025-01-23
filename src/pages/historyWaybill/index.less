@@ -1,0 +1,50 @@
+.history-waybill-page {
+  min-height: 100vh;
+  position: relative;
+  background-color: #f7f8fa;
+
+  .product-header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 30px 62px -3px #dbdbdb9a;
+    z-index: 100;
+    background-color: #fff;
+
+    .search-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .taroify-dropdown-menu {
+        flex: 1;
+        .taroify-dropdown-menu__bar {
+          box-shadow: none;
+          height: 110px;
+        }
+      }
+      .taroify-search {
+        width: 78vw;
+      }
+    }
+
+    .taroify-cell {
+      .taroify-cell__title {
+        flex: none;
+        width: 30vw;
+      }
+      .taroify-cell__value {
+        flex: 2;
+      }
+    }
+  }
+
+  .list-box {
+    margin-top: 285px;
+    .waybill-item {
+      width: 92vw;
+      margin: 0 auto;
+    }
+  }
+
+}

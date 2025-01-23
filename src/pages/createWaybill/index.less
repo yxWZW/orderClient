@@ -1,0 +1,209 @@
+.waybill-page {
+  position: relative;
+  box-sizing: border-box;
+  padding: 20px 30px;
+  background-color: #f7f8fa;
+  padding-bottom: 180px;
+
+  .client-info-form {
+    .button-box {
+      width: 600px;
+      margin: 0 auto;
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+
+  .empty-box {
+    width: 630px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px dashed #888689;
+    border-radius: 20px;
+    background-color: #fff;
+    .taroify-empty {
+      padding: 0;
+      transform: scale(0.8);
+    }
+  }
+
+  .order-list-box {
+    width: 690px;
+    margin: 0 auto;
+    background-color: #fff;
+    .custom-swipe-cell {
+      border-bottom: 1px dashed #888689;
+      .taroify-swipe-cell__actions {
+        .taroify-button {
+          height: 100%;
+        }
+      }
+
+      .custom-card {
+        background: #fff;
+        position: relative;
+        box-sizing: border-box;
+        padding: 20px 30px;
+        color: #323233;
+        .card-header {
+          margin-bottom: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .header-title {
+            font-size: 40px;
+            margin-right: 15px;
+            font-weight: bold;
+          }
+          .header-price {
+            color: #8e8e8e;
+          }
+        }
+        .card-content {
+          font-size: 30px;
+          color: #b3b3b3;
+          .card-info-weight {
+            font-size: 35px;
+            color: #000;
+            font-weight: bold;
+          }
+        }
+        .card-footer {
+          font-size: 30px;
+          color: #b3b3b3;
+          .remark-text {
+            font-size: 32px;
+            color: #3c3c3c;
+          }
+        }
+
+        .custom-card__content {
+          max-width: 160px;
+        }
+
+        .custom-card__right {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .right-input {
+            width: 180px;
+            height: 82px;
+            padding-left: 20px;
+            border-radius: 20px;
+            background-color: #f7f8fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .input-label {
+              width: 140px;
+            }
+          }
+
+          .stepper-box {
+            transform: scale(0.9);
+            margin-right: -20px;
+          }
+
+          .taroify-stepper {
+            width: 220px;
+          }
+        }
+
+        &__thumb {
+          position: relative;
+          flex: none;
+          width: 170px;
+          height: 170px;
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+
+  .footer-box {
+    padding: 20px 30px 30px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: #fff;
+    box-shadow: 0px -8px 19px -3px #dbdbdb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .total-num-1 {
+      font-size: 50px;
+      color: #ff7575;
+    }
+    .total-num-2 {
+      font-size: 30px;
+      color: #ff7575;
+    }
+  }
+
+  .edit-order-box {
+    padding: 30px 20px;
+    box-sizing: border-box;
+    width: 100vw;
+
+    .order-content {
+      margin-top: 20px;
+      & > view {
+        margin-bottom: 20px;
+      }
+      .product-name {
+        font-size: 30px;
+        margin-left: 45px;
+        color: #000;
+      }
+      .product-modelnum {
+        font-size: 30px;
+        margin-left: 40px;
+      }
+      .taroify-cell {
+        font-size: 30px;
+        color: #000;
+        .taroify-input {
+          font-size: 30px;
+          color: #000;
+        }
+      }
+      .taroify-cell::after {
+        position: relative;
+      }
+      .taroify-stepper {
+        margin-left: 25px;
+      }
+    }
+
+    .button-box {
+      width: 600px;
+      margin: 20px auto;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+
+      .save-btn {
+        margin-left: 20px;
+      }
+    }
+  }
+
+  .eamoney-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .eamoney-text {
+      color: #828283;
+      margin-right: 20px;
+      margin-bottom: 2px;
+    }
+  }
+}
