@@ -2,10 +2,10 @@ import { View, Text } from "@tarojs/components";
 import { useEffect, useState } from "react";
 import Taro, { useReachBottom, getCurrentInstance } from "@tarojs/taro";
 import HeaderTitle from "@/components/HeaderTitle";
+import PhoneCard from "@/components/PhoneCard";
 import { toLoadClientInfo } from "@/axios/index";
 import { Button, Cell, Field, Input, Form, Divider } from "@taroify/core";
 import { useEventTrigger } from "@/tool/index";
-import { Phone, Chat } from "@taroify/icons";
 
 import "./index.less";
 
@@ -184,18 +184,9 @@ const Index = () => {
               <Text>{item.telephone}</Text>
             </View>
             <View className="card-footer">
-              <Text>{item.address}</Text>
-              <View>
-                <Chat
-                  style={{ color: "#00b26a" }}
-                  size="30"
-                  onClick={(e) => phoneClient(e, item.telephone, false)}
-                />
-                <Phone
-                  style={{ color: "#1989fa", marginLeft: "20px" }}
-                  size="30"
-                  onClick={(e) => phoneClient(e, item.telephone, true)}
-                />
+              <Text className="text-box">{item.address}</Text>
+              <View className="phone-box">
+                <PhoneCard telephone={item.telephone} />
               </View>
             </View>
           </View>

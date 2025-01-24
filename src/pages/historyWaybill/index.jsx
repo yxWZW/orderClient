@@ -145,6 +145,14 @@ const Index = () => {
     toLoadWaybillInfoSync();
   };
 
+  /**
+   * 跳转货单详情
+   * @param {*} id 货单ID
+   */
+  const toWaybillDetails = (id) => {
+    Taro.navigateTo({ url: `/pages/waybillDetails/index?id=${id}` });
+  };
+
   return (
     <View className="history-waybill-page">
       <View className="product-header">
@@ -201,7 +209,10 @@ const Index = () => {
         >
           <List loading={loading} hasMore={hasMore} onLoad={pullupLoad}>
             {list.map((item) => (
-              <View className="waybill-item">
+              <View
+                className="waybill-item"
+                onClick={() => toWaybillDetails(item.id)}
+              >
                 <WaybillCard waybillInfo={item} />
               </View>
             ))}
