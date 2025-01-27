@@ -60,6 +60,7 @@ const config = {
     },
   },
   h5: {
+    esnextModules: ['taro-react-table'],
     publicPath: "/",
     staticDirectory: "static",
     postcss: {

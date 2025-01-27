@@ -3890,7 +3890,7 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
-classnames@^2.2.5, classnames@^2.2.6:
+classnames@^2.2.5, classnames@^2.2.6, classnames@^2.3.1:
   version "2.5.1"
   resolved "https://mirrors.huaweicloud.com/repository/npm/classnames/-/classnames-2.5.1.tgz#ba774c614be0f016da105c858e7159eae8e7687b"
   integrity sha512-saHYOzhIQs6wy2sVxTM6bUDsQO4F50V9RQ22qBpEdCW+I+/Wmke2HOl6lS6dTpdxVhb88/I6+Hs+438c3lfUow==
@@ -11847,6 +11847,13 @@ tar-stream@^1.5.2:
     readable-stream "^2.3.0"
     to-buffer "^1.1.1"
     xtend "^4.0.0"
+
+taro-react-table@^1.7.5:
+  version "1.7.5"
+  resolved "https://registry.npmmirror.com/taro-react-table/-/taro-react-table-1.7.5.tgz#a8a131832f96e23891a8077cabbae2952433e262"
+  integrity sha512-dBhc8puPlRDciNyowhkclhRVgui1MRwKJypKcBpHuayjE8QatppuIY27sJKAJt9iyuS2idkFu4ZpOQa4Zcgj6Q==
+  dependencies:
+    classnames "^2.3.1"
 
 taro-ui@^3.2.1:
   version "3.3.0"
